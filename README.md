@@ -6,6 +6,9 @@ wget https://github.com/dw5/proot-ubuntu-xfce-nosudo/raw/main/proot
 wget https://github.com/dw5/proot-ubuntu-xfce-nosudo/raw/main/libtalloc.so.2
 chmod a+rx proot
 chmod a+rx libtalloc.so.2
+# proot to /home/$USER/bin
+# lib to... libs
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/$USER/libs/
 ```
 note: proot and libtalloc is from debian 10 (buster)  
 2. Based on androinix ubuntu 20.04 (there was 22.04 but only arm64) typically used for termux
